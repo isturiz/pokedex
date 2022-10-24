@@ -3,7 +3,7 @@
 // }
 
 
-document.addEventListener('change', () => {
+document.addEventListener('keyup', () => {
 // document.addEventListener('DOMContentLoaded', () => {
 
 
