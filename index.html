@@ -7,16 +7,41 @@
   <title>Pokedex</title>
 </head>
 <body>
-  
-  <main>
-    <div class="flex">
 
-    </div>
-  </main>
+  <input type="Pokemon name" id="pokemon-name__input" value="pichu">
+
+  <main class="flex">
+		
+	</main>
+
+	<template id="template-card">
+		<article class="card">
+			<div class="card-body">
+				<img src="./images/image-victor.jpg" alt="imagen de vitoko" class="card-body-img">
+				<h1 class="card-body-title">
+					Pokemon name
+					<span>N.º26</span>
+				</h1>
+				<p class="card-body-text">Type</p>
+			</div>
+			<div class="card-footer">
+				<div class="card-footer-social">
+					<h3>0</h3>
+					<p>Attack</p>
+				</div>
+				<div class="card-footer-social">
+					<h3>0</h3>
+					<p>Defense</p>
+				</div>
+				<div class="card-footer-social">
+					<h3>0</h3>
+					<p>Speed</p>
+				</div>
+			</div>
+		</article>
+	</template>
 
 
-  <template id="template-card">
-    a
-  </template>
+  <script src="./js/app.js"></script>
 </body>
 </html>
