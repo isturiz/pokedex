@@ -5,16 +5,44 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pokedex</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+	</style>
+	<link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+	<!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
 
-  <input type="Pokemon name" id="pokemon-name__input" value="pichu">
+	
+	<main class="flex">
+		<button type="button" class="nes-btn is-primary">Prev</button>
+		<div class="nes-field">
+			<input type="text" id="pokemon-name__input" class="nes-input" placeholder="Pokemon name">
+		</div>
+		<button type="button" class="nes-btn is-primary">Next</button>
 
-  <main class="flex">
-		
+		<article class="card nes-container">
+			<div class="card-body">
+				<img src="" alt="" class="card-body__img">
+				<h1 class="card-body__title"></h1>
+
+
+			</div>
+		</article>
 	</main>
 
-	<template id="template-card">
+	<!-- <template id="template">
+		<article class="card">
+			<div class="card-body">
+				<img src="" alt="" class="card-body__img">
+				<h1 class="card-body__title"></h1>
+
+
+			</div>
+		</article>
+	</template> -->
+
+	<!-- <template id="template-card">
 		<article class="card">
 			<div class="card-body">
 				<img src="./images/image-victor.jpg" alt="imagen de vitoko" class="card-body-img">
@@ -39,9 +67,9 @@
 				</div>
 			</div>
 		</article>
-	</template>
+	</template> -->
 
 
-  <script src="./js/app.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>

@@ -1,0 +1,48 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --red: #EE2B34;
+  --yellow: #F0B807;
+
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+
+
+}
+
+
+main {
+  /* background-color: bisque; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 45rem;
+}
+
+input {
+  display: flex;
+  text-align: center;
+  width: 40%;
+}
+
+article {
+  height: 40rem;
+  width: 100%;
+  background-color: var(--red);
+}
