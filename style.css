@@ -13,36 +13,10 @@
 }
 
 body {
-  height: 100vh;
-
-
-  display: flex;
   text-align: center;
+}
+
+.pokemon-name {
+  display: flex;
   justify-content: center;
-  align-content: center;
-
-
-}
-
-
-main {
-  /* background-color: bisque; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  width: 45rem;
-}
-
-input {
-  display: flex;
-  text-align: center;
-  width: 40%;
-}
-
-article {
-  height: 40rem;
-  width: 100%;
-  background-color: var(--red);
 }

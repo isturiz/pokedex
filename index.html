@@ -9,17 +9,20 @@
 		@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 	</style>
 	<link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
-	<!-- <link rel="stylesheet" href="style.css"> -->
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 	
 	<main class="flex">
-		<button type="button" class="nes-btn is-primary">Prev</button>
-		<div class="nes-field">
-			<input type="text" id="pokemon-name__input" class="nes-input" placeholder="Pokemon name">
+		<div class="pokemon-name">
+			
+			<button type="button" class="nes-btn is-primary">Prev</button>
+			<div class="nes-field">
+				<input type="text" id="pokemon-name__input" class="nes-input" placeholder="Pokemon name">
+			</div>
+			<button type="button" class="nes-btn is-primary">Next</button>
 		</div>
-		<button type="button" class="nes-btn is-primary">Next</button>
 
 		<article class="card nes-container">
 			<div class="card-body">
@@ -30,45 +33,6 @@
 			</div>
 		</article>
 	</main>
-
-	<!-- <template id="template">
-		<article class="card">
-			<div class="card-body">
-				<img src="" alt="" class="card-body__img">
-				<h1 class="card-body__title"></h1>
-
-
-			</div>
-		</article>
-	</template> -->
-
-	<!-- <template id="template-card">
-		<article class="card">
-			<div class="card-body">
-				<img src="./images/image-victor.jpg" alt="imagen de vitoko" class="card-body-img">
-				<h1 class="card-body-title">
-					Pokemon name
-					<span>N.º26</span>
-				</h1>
-				<p class="card-body-text">Type</p>
-			</div>
-			<div class="card-footer">
-				<div class="card-footer-social">
-					<h3>0</h3>
-					<p>Attack</p>
-				</div>
-				<div class="card-footer-social">
-					<h3>0</h3>
-					<p>Defense</p>
-				</div>
-				<div class="card-footer-social">
-					<h3>0</h3>
-					<p>Speed</p>
-				</div>
-			</div>
-		</article>
-	</template> -->
-
 
   <script src="./app.js"></script>
 </body>
