@@ -29,22 +29,40 @@ body {
 
   margin-top: 4rem;
 }
+
+/* CARD */
 .card {
   justify-items: center;
   width: 60rem;
+}
+
+.pokecard-type{
+  margin-left: -75.1px;
+}
+
+.card-body__img {
+  transform: scale(3)
+}
+
+.card-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center ;
 }
 
 .card-body__title {
   padding-bottom: 2rem;
 }
 
+
+/* STATS */
 .stats-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-left: 2rem;
 }
 
 .pokecard-stat_text {
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }

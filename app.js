@@ -71,6 +71,8 @@ const drawCard = (pokemon) => {
   card.querySelector('.card-body__img').setAttribute('src', pokemon.img)
   card.querySelector('.card-body__title').innerHTML = `${pokemon.name} <span>N.º${pokemon.id}</span>`
 
+  card.querySelector('.pokecard-type').innerHTML = `${pokemon.type}`
+
   card.querySelector('.pokecard-hp').innerHTML = `hp: ${pokemon.hp}`
   card.querySelector('.pokecard-attack').innerHTML = `attack: ${pokemon.attack}`
   card.querySelector('.pokecard-defense').innerHTML = `defense: ${pokemon.defense}`
