@@ -33,3 +33,18 @@ body {
   justify-items: center;
   width: 60rem;
 }
+
+.card-body__title {
+  padding-bottom: 2rem;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 2rem;
+}
+
+.pokecard-stat_text {
+  display: flex;
+  justify-content: left;
+}

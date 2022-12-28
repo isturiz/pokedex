@@ -19,8 +19,12 @@ const fetchData = async (pokemonName) => {
       name: data.name,
       id: data.id,
       type: data.types[0].type.name,
+
+      hp: data.stats[0].base_stat,
       attack: data.stats[1].base_stat,
       defense: data.stats[2].base_stat,
+      sAttack: data.stats[3].base_stat,
+      sDefense: data.stats[4].base_stat,
       speed: data.stats[5].base_stat
     }
 
@@ -44,17 +48,18 @@ let prev = document.querySelector('#prev')
 let next = document.querySelector('#next')
 
 prev.addEventListener('click', () => {
+  console.log(isNaN(pokemon.id));
+
+  if (isNaN(pokemon.id)) { pokemon.id = 1 }
+
   const pokePrev = pokemon.id - 1
-  console.log(pokePrev);
   fetchData(pokePrev)
-
-  
-
 })
 
 next.addEventListener('click', () => {
+  if (isNaN(pokemon.id)) { pokemon.id = 1 }
+
   const pokeNext = pokemon.id + 1
-  console.log(pokeNext);
   fetchData(pokeNext)
 })
 
@@ -65,11 +70,13 @@ const drawCard = (pokemon) => {
 
   card.querySelector('.card-body__img').setAttribute('src', pokemon.img)
   card.querySelector('.card-body__title').innerHTML = `${pokemon.name} <span>N.º${pokemon.id}</span>`
-  card.querySelector('.card-type').innerHTML = `${pokemon.attack}`
-  // clone.querySelector('.card-body-text').innerHTML = `${pokemon.type}`
 
-  // clone.querySelectorAll('.card-footer h3')[0].innerHTML = `${pokemon.attack}`
-  // clone.querySelectorAll('.card-footer h3')[1].innerHTML = `${pokemon.defense}`
-  // clone.querySelectorAll('.card-footer h3')[2].innerHTML = `${pokemon.speed}`
+  card.querySelector('.pokecard-hp').innerHTML = `hp: ${pokemon.hp}`
+  card.querySelector('.pokecard-attack').innerHTML = `attack: ${pokemon.attack}`
+  card.querySelector('.pokecard-defense').innerHTML = `defense: ${pokemon.defense}`
+  card.querySelector('.pokecard-sAttack').innerHTML = `sp. atack: ${pokemon.sAttack}`
+  card.querySelector('.pokecard-sDefense').innerHTML = `sp. defense: ${pokemon.sDefense}`
+  card.querySelector('.pokecard-speed').innerHTML = `speed: ${pokemon.speed}`
+
 
 }
