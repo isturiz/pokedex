@@ -7,7 +7,7 @@ document.addEventListener('keyup', () => {
 // document.addEventListener('DOMContentLoaded', () => {
 
 
-  const pokemonName = document.getElementById('pokemon-name__input').value
+  const pokemonName = document.getElementById('pokemon-name__input').value.toLowerCase();
   fetchData(pokemonName)
 })
 
