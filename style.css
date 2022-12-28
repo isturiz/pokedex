@@ -19,4 +19,17 @@ body {
 .pokemon-name {
   display: flex;
   justify-content: center;
+  gap: 2rem;
+}
+
+.main{
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+
+  margin-top: 4rem;
+}
+.card {
+  justify-items: center;
+  width: 60rem;
 }
